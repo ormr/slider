@@ -1,0 +1,90 @@
+.slider {
+  max-width: 90%;
+  position: relative;
+  margin: auto;
+  height: 300px;
+  margin-bottom: 15px;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 10%;
+  color: #fff;
+}
+
+.btn-left, .btn-right {
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  position: absolute;
+}
+
+.btn-left:hover, .btn-right:hover {
+  color: #0f97e3;
+  border-color: #0f97e3;
+}
+
+.btn-right {
+  top: 50%;
+  right: 4%;
+}
+
+.btn-left {
+  top: 50%;
+  left: 4%;
+}
+
+.item {
+  border-radius: 10px;
+  min-height: 320px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 20%;
+}
+
+.slider .item {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.img1 {
+  background-image: url(img/img1.jpg);
+}
+
+.img2 {
+  background-image: url(img/img2.jpg);
+}
+
+.img3 {
+  background-image: url(img/img3.jpg);
+}
+
+.img4 {
+  background-image: url(img/img4.jpg);
+}
+
+.disable {
+  display: none;
+}
+
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}

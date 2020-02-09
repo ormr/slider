@@ -1,8 +1,8 @@
 let leftBtn = document.createElement('button');
 let rightBtn = document.createElement('button');
 
-leftBtn.innerHTML = '<';
-rightBtn.innerHTML = '>';
+leftBtn.innerHTML = '&#x2039;';
+rightBtn.innerHTML = '&#x203A;';
 
 leftBtn.classList.add('btn-left');
 rightBtn.classList.add('btn-right');
@@ -36,4 +36,4 @@ rightBtn.addEventListener('click', moveSlide.bind(null, 1));
 
 leftBtn.addEventListener('click', moveSlide.bind(null, -1));
 
-setInterval(moveSlide.bind(null, 1), 2000);
+setInterval(moveSlide.bind(null, 1), 5000);
